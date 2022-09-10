@@ -1,0 +1,122 @@
+.JokeList {
+    display: flex;
+    width: 80%;
+    height: 80%;
+}
+
+.JokeList-sidebar {
+    background: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    box-shadow: 5px 3px 8px 1px black;
+    z-index: 2;
+}
+
+.JokeList-title {
+    font-size: 40px;
+    margin: 32px;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 10px;
+}
+
+.JokeList-title span {
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.JokeList-sidebar img {
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 0px 2px 15px 10px purple;
+    ;
+}
+
+.JokeList-sidebar img:hover {
+    animation-name: OnHoverImageShake;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.JokeList-jokes, .JokeList-loading {
+    height: 90%;
+    background: white;
+    align-self: center;
+    width: 70%;
+    overflow-y: scroll;
+    box-shadow: 5px 3px 8px 1px black;
+}
+
+.JokeList-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: purple;
+}
+
+.JokeList-getmore {
+    margin: 30px;
+    background: purple;
+    color: white;
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    border: 5px solid rgb(161, 5, 161);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.JokeList-getmore:hover {
+    border: 5px solid white;
+}
+
+.fa-face-grin-squint-tears {
+    font-weight: 32px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: purple; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(182, 2, 182); 
+  }
+
+  @keyframes OnHoverImageShake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    5% { transform: translate(5px, 5px) rotate(5deg); }
+    10% { transform: translate(0, 0) rotate(0eg); }
+    15% { transform: translate(-5px, 5px) rotate(-5deg); }
+    20% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(0, 0) rotate(0deg); }
+    30% { transform: translate(5px, 5px) rotate(5deg); }
+    35% { transform: translate(0, 0) rotate(0eg); }
+    40% { transform: translate(-5px, 5px) rotate(-5deg); }
+    45% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    55% { transform: translate(5px, 5px) rotate(5deg); }
+    60% { transform: translate(0, 0) rotate(0eg); }
+    65% { transform: translate(-5px, 5px) rotate(-5deg); }
+    70% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(0, 0) rotate(0deg); }
+    80% { transform: translate(5px, 5px) rotate(5deg); }
+    85% { transform: translate(0, 0) rotate(0eg); }
+    90% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
